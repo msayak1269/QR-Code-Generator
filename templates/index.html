@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QR CODE GENERATER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <style>
+        p{
+            margin: 0px;
+        }
+        .footer{
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+           width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p-3 bg-dark text-white text-center">
+        <h5>QR CODE</h5>
+    </div>
+    <div class="container text-center mt-3">
+        <div class="card">
+            <div class="card-body">
+                <form action="/view" method="POST">
+                    <div class="form-group">
+                        <label for="url">Enter link/Url</label><br>
+                        <input type="text" placeholder="Enter link/URl" required name="url" id="url" class="mb-2"><br>
+                        <button class="btn btn-primary" id="search" type="submit">Creat QR Code</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center mt-2">
+        <p>Developed by</p>
+        <h6>Sayak Mukhopadhyay</h6>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#url").val("");
+        })
+        
+    </script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

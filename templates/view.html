@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QR Code Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <style>
+        a:hover{
+            text-decoration: none;
+        }
+        p{
+            margin: 0px;
+        }
+        .footer{
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+           width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p-3 bg-dark text-white text-center">
+        <a href="/"><h5 style="color: white;text-decoration: none;">QR CODE</h5></a>
+    </div>
+    <div class="container text-center mt-3">
+        <div class="card">
+            <div class="card-body text-center">
+                <img src="/qrcode.png" alt="QRCODE">
+            </div>
+            <div class="card-footer">
+                <a href="/qrcode.png" download="qrcode.png">
+                    <div class="btn btn-primary">Download</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center mt-3">
+        <p>Developed by</p>
+        <h6>Sayak Mukhopadhyay</h6>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
